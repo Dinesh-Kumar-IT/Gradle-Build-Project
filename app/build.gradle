@@ -15,6 +15,12 @@ plugins {
     id 'java'
 }
 
+jar {
+    manifest {
+        attributes 'Main-Class': 'org.example.App'
+    }
+}
+
 repositories {
     mavenCentral()
 }
